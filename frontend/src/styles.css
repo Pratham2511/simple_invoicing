@@ -29,9 +29,147 @@
   color-scheme: dark;
 }
 
+/* Light palette. Overrides every colour token declared in the dark :root
+   block below (that block has the role comments). Derived tokens such as
+   --bg, --text or --accent are built from the triplets there, so they follow
+   automatically; only the opaque ones are repeated here. Navy text on
+   off-white surfaces, a darker teal accent (#0f766e) that clears 4.5:1 as
+   text, and --rgb-overlay turned into navy ink so the dark theme's white
+   sheens become faint tints. */
 :root[data-theme="light"] {
   color-scheme: light;
-  /* Light palette: filled in by a later step */
+
+  /* Hue triplets */
+  --rgb-overlay: 15 29 48;
+  --rgb-shadow: 0 0 0;
+  --rgb-scrim: 51 65 85;
+  --rgb-text: 10 20 36;
+  --rgb-muted: 52 64 86;
+  --rgb-accent: 11 100 93;
+  --rgb-on-accent: 255 255 255;
+  --rgb-accent-2: 37 99 235;
+  --rgb-accent-violet: 99 102 241;
+  --rgb-info: 52 98 186;
+  --rgb-tag-line: 100 116 139;
+  --rgb-danger: 180 35 24;
+  --rgb-danger-strong: 220 38 38;
+  --rgb-warning: 115 75 0;
+  --rgb-success: 21 128 61;
+  --rgb-orange: 154 52 10;
+  --rgb-highlight: 59 130 246;
+
+  /* Navy surfaces become white / near-white surfaces */
+  --rgb-bg: 244 247 251;
+  --rgb-panel: 255 255 255;
+  --rgb-panel-top: 255 255 255;
+  --rgb-panel-raised: 255 255 255;
+  --rgb-panel-hover-top: 236 244 252;
+  --rgb-panel-hover-bottom: 248 250 253;
+  --rgb-panel-sticky: 248 250 252;
+  --rgb-panel-alt: 255 255 255;
+  --rgb-panel-row: 255 255 255;
+  --rgb-card-strong: 255 255 255;
+  --rgb-panel-well: 236 241 248;
+  --rgb-panel-field: 255 255 255;
+  --rgb-panel-section: 248 250 252;
+  --rgb-hero-top: 228 238 250;
+  --rgb-hero-bottom: 244 247 251;
+
+  /* Avatar tones: dark enough to read as text on their own tint */
+  --rgb-avatar-default: 40 72 140;
+  --rgb-avatar-1: 12 92 86;
+  --rgb-avatar-2: 52 72 170;
+  --rgb-avatar-3: 98 56 170;
+  --rgb-avatar-4: 120 80 0;
+  --rgb-avatar-5: 160 30 60;
+  --rgb-avatar-6: 20 100 56;
+
+  /* Core */
+  --bg-soft: #e9eff7;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --line: rgba(15, 29, 48, 0.14);
+  --accent-deep: #115e59;
+  --shadow: 0 24px 60px rgb(15 29 48 / 0.12);
+  --body-bg: #f4f7fb;
+  --page-bg:
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 26%),
+    linear-gradient(160deg, #f8fafc 0%, #f4f7fb 50%, #eaf0f8 100%);
+
+  /* Fills and ink on fills */
+  --accent-bright: #0f7a70;
+  --secondary-start: #3b6fd8;
+  --secondary-end: #2852b8;
+  --on-secondary: #ffffff;
+  --on-warning: #fffaf0;
+  --strength-weak: #c2410c;
+  --strength-strong: #15803d;
+  --outline-info: #2563eb;
+
+  /* Opaque surfaces */
+  --bg-pdf-frame: #e9eff7;
+  --bg-sticky-head: #f1f5fa;
+  --bg-pinned-hover: #e2edf0;
+  --bg-pinned-hover-info: #eaeff8;
+  --bg-pinned-editing: #e6eff2;
+
+  /* Text tones */
+  --text-strong: #0b1626;
+  --text-soft: #334155;
+  --text-tax-grid: #334a6b;
+  --text-allocation-amount: #334155;
+  --text-bank-facts: #1e293b;
+  --text-summary-stat: #0f1d30;
+  --text-tip-strong: #1e3a6e;
+  --text-debit: #1d5aa0;
+  --text-credit: #a8401a;
+  --text-balance-debit: #024a36;
+  --text-balance-credit: #7c2a0e;
+  --text-sales: #3f6212;
+  --text-danger-soft: #b91c1c;
+  --text-on-danger-tint: #991b1b;
+  --text-on-danger-tint-2: #991b1b;
+  --text-on-danger-tint-3: #991b1b;
+  --text-on-accent-tint: #07433d;
+  --text-on-accent-tint-2: #0b5952;
+  --text-on-accent-tint-3: #0b5952;
+  --text-on-accent-tint-4: #0b5952;
+  --text-on-info-tint: #1e3a7a;
+  --text-on-info-tint-2: #1e3a7a;
+  --text-on-info-tint-3: #1e3a7a;
+  --text-on-success-tint: #166534;
+  --text-on-orange-tint: #9a3412;
+  --text-placeholder: #64748b;
+  --line-neutral: #e2e8f0;
+  --line-neutral-strong: #cbd5e1;
+  --logo-frame-bg: #f9fafb;
+
+  /* Charts (series checked against the white chart card) */
+  --chart-sales: #2563eb;
+  --chart-secondary: #b45309;
+  --chart-revenue: #047857;
+  --chart-profit: #047857;
+  --chart-loss: #dc2626;
+  --chart-purchases: #4f63c8;
+  --chart-axis: rgb(var(--rgb-muted));
+  --chart-tooltip-bg: #ffffff;
+  --chart-tooltip-text: rgb(var(--rgb-text));
+
+  /* Sidebar follows the theme */
+  --sidebar-bg: #ffffff;
+  --sidebar-text: rgb(var(--rgb-text));
+  --sidebar-muted: rgb(var(--rgb-muted));
+  --sidebar-section-label: rgb(var(--rgb-muted) / 0.9);
+  --sidebar-active-text: #115e59;
+
+  /* --color-* aliases with literal values */
+  --color-success: #0d5c32;
+  --color-success-text: #0d5c32;
+}
+
+/* Light-only rule fixes where a token alone cannot reach 4.5:1. */
+:root[data-theme="light"] .step-rail__item--current .step-rail__index,
+:root[data-theme="light"] .step-rail__item--done .step-rail__index {
+  color: var(--text-on-accent-tint);
 }
 
 :root {
@@ -115,7 +253,9 @@
   --accent-bright: #7ff1d6;               /* primary button gradient end */
   --secondary-start: #8fb8ff;             /* secondary button gradient */
   --secondary-end: #5e8fff;
-  --on-secondary: white;                  /* text on the blue secondary button: always white */
+  /* Ink on the blue secondary button. Was white, which is 2.5:1 on the light
+     end of the gradient; this navy is 5.6:1 on the dark end. */
+  --on-secondary: #0a1a3d;
   --on-warning: #2c2103;                  /* text on a solid --warning fill */
   --strength-weak: #ffae70;               /* password strength bar */
   --strength-strong: #7ddfa5;
@@ -1220,7 +1360,7 @@ textarea {
 }
 
 .register__nil {
-  color: rgb(var(--rgb-muted) / 0.35);
+  color: rgb(var(--rgb-muted) / 0.8);
 }
 
 /* The voucher kind, as a tag rather than a word in a sentence. Kept small on
@@ -3580,7 +3720,13 @@ a.invoice-row {
   font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
-  color: rgb(var(--rgb-muted) / 0.65);
+  color: rgb(var(--rgb-muted) / 0.9);
+}
+
+/* The eyebrow's 0.8 alpha is 4.3:1 on the teal headline tint; full --muted
+   clears 4.5:1 there. */
+.tax-total--headline .tax-total__label {
+  color: var(--muted);
 }
 
 .tax-total__value {
@@ -6020,7 +6166,7 @@ a.ledger-chip:focus-visible {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgb(var(--rgb-muted) / 0.6);
+  color: rgb(var(--rgb-muted) / 0.85);
 }
 
 .ledger-card__balance-value {
@@ -6056,7 +6202,7 @@ a.ledger-chip:focus-visible {
   border-radius: 999px;
   background: rgb(var(--rgb-overlay) / 0.03);
   border: 1px solid rgb(var(--rgb-info) / 0.1);
-  color: rgb(var(--rgb-muted) / 0.6);
+  color: rgb(var(--rgb-muted) / 0.85);
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.08em;
