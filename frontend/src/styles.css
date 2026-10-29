@@ -2452,9 +2452,9 @@ a.invoice-row {
 }
 
 .invoice-type-badge--purchase {
-  background: rgba(251, 146, 60, 0.2);
-  color: #fb923c;
-  border: 1px solid rgba(251, 146, 60, 0.4);
+  background: rgb(var(--rgb-orange) / 0.2);
+  color: var(--text-purchase);
+  border: 1px solid rgb(var(--rgb-orange) / 0.4);
 }
 
 .invoice-row__header {
@@ -2501,9 +2501,9 @@ a.invoice-row {
   padding: 6px 10px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #c7d7f4;
-  background: rgba(148, 184, 255, 0.1);
-  border: 1px solid rgba(148, 184, 255, 0.2);
+  color: var(--text-soft);
+  background: rgb(var(--rgb-info) / 0.1);
+  border: 1px solid rgb(var(--rgb-info) / 0.2);
 }
 
 .invoice-row__items,
@@ -2519,12 +2519,12 @@ a.invoice-row {
   gap: 8px;
   padding: 10px 12px;
   border-radius: 14px;
-  background: rgba(8, 16, 29, 0.66);
-  border: 1px solid rgba(148, 184, 255, 0.14);
+  background: rgb(var(--rgb-panel-well) / 0.66);
+  border: 1px solid rgb(var(--rgb-info) / 0.14);
 }
 
 .invoice-row__tax-grid span {
-  color: #bdd0f2;
+  color: var(--text-tax-grid);
   font-size: 0.82rem;
   font-weight: 600;
 }
@@ -2544,8 +2544,8 @@ a.invoice-row {
   margin-top: 8px;
   padding: 10px 12px;
   border-radius: 14px;
-  background: rgba(8, 16, 29, 0.56);
-  border: 1px solid rgba(148, 184, 255, 0.14);
+  background: rgb(var(--rgb-panel-well) / 0.56);
+  border: 1px solid rgb(var(--rgb-info) / 0.14);
   display: grid;
   gap: 8px;
 }
@@ -2554,8 +2554,8 @@ a.invoice-row {
   margin-top: 6px;
   padding: 6px 10px;
   border-radius: 10px;
-  background: rgba(8, 16, 29, 0.56);
-  border: 1px solid rgba(148, 184, 255, 0.14);
+  background: rgb(var(--rgb-panel-well) / 0.56);
+  border: 1px solid rgb(var(--rgb-info) / 0.14);
   display: flex;
   align-items: baseline;
   gap: 8px;
@@ -2565,7 +2565,7 @@ a.invoice-row {
 }
 
 .voucher-note__label {
-  color: #c7d7f4;
+  color: var(--text-soft);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.68rem;
@@ -2574,7 +2574,7 @@ a.invoice-row {
 }
 
 .voucher-note__text {
-  color: #e9f0ff;
+  color: var(--text-strong);
 }
 
 .statement-entry-note {
@@ -2594,13 +2594,13 @@ a.invoice-row {
 }
 
 .receipt-allocation-strip__title {
-  color: #c7d7f4;
+  color: var(--text-soft);
   font-size: 0.78rem;
   font-weight: 700;
 }
 
 .receipt-allocation-strip__total {
-  color: #e9f0ff;
+  color: var(--text-strong);
   font-size: 0.78rem;
   font-weight: 800;
   /* The strip sits inside .invoice-row__meta, which breaks anywhere so that
@@ -2623,13 +2623,13 @@ a.invoice-row {
   gap: 6px;
   border-radius: 999px;
   padding: 4px 10px;
-  border: 1px solid rgba(148, 184, 255, 0.24);
-  background: rgba(148, 184, 255, 0.1);
+  border: 1px solid rgb(var(--rgb-info) / 0.24);
+  background: rgb(var(--rgb-info) / 0.1);
   white-space: nowrap;
 }
 
 .receipt-allocation-chip__invoice {
-  color: #e9f0ff;
+  color: var(--text-strong);
   font-size: 0.76rem;
   font-weight: 700;
 }
@@ -2644,22 +2644,22 @@ a.invoice-row {
 }
 
 .receipt-allocation-chip__status--full {
-  color: #7ce9b0;
-  background: rgba(34, 197, 94, 0.15);
+  color: var(--color-success);
+  background: rgb(var(--rgb-success) / 0.15);
 }
 
 .receipt-allocation-chip__status--partial {
-  color: #f6d67b;
-  background: rgba(246, 214, 123, 0.16);
+  color: var(--warning);
+  background: rgb(var(--rgb-warning) / 0.16);
 }
 
 .receipt-allocation-chip__status--unpaid {
-  color: #fca5a5;
-  background: rgba(239, 68, 68, 0.16);
+  color: var(--text-danger-soft);
+  background: rgb(var(--rgb-danger-strong) / 0.16);
 }
 
 .receipt-allocation-chip__amount {
-  color: #cdd9ef;
+  color: var(--text-allocation-amount);
   font-size: 0.74rem;
   font-weight: 700;
 }
@@ -2699,8 +2699,8 @@ a.invoice-row {
   gap: 6px;
   padding: 10px 12px;
   border-radius: 14px;
-  background: rgba(8, 16, 29, 0.66);
-  border: 1px solid rgba(148, 184, 255, 0.14);
+  background: rgb(var(--rgb-panel-well) / 0.66);
+  border: 1px solid rgb(var(--rgb-info) / 0.14);
 }
 
 .invoice-row__amount {
@@ -2711,11 +2711,11 @@ a.invoice-row {
 }
 
 .invoice-row__amount--sales {
-  color: rgba(34, 197, 94, 0.8);
+  color: rgb(var(--rgb-success) / 0.8);
 }
 
 .invoice-row__amount--purchase {
-  color: rgba(251, 146, 60, 0.8);
+  color: rgb(var(--rgb-orange) / 0.8);
 }
 
 .line-item__price,
@@ -2738,24 +2738,24 @@ a.invoice-row {
   border-radius: 999px;
   padding: 8px 12px;
   font-weight: 800;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(var(--rgb-overlay) / 0.05);
 }
 
 .pill--low {
-  background: rgba(255, 139, 139, 0.12);
-  color: #ffc1c1;
+  background: rgb(var(--rgb-danger) / 0.12);
+  color: var(--text-on-danger-tint);
 }
 
 .pill--ok {
-  background: rgba(87, 209, 201, 0.12);
-  color: #bcfff9;
+  background: rgb(var(--rgb-accent) / 0.12);
+  color: var(--text-on-accent-tint-2);
 }
 
 .summary-box {
   padding: 18px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(148, 184, 255, 0.08);
+  background: rgb(var(--rgb-overlay) / 0.03);
+  border: 1px solid rgb(var(--rgb-info) / 0.08);
 }
 
 .summary-box__value {
@@ -2816,12 +2816,12 @@ a.invoice-row {
 
 .login-hero {
   background:
-    radial-gradient(circle at top left, rgba(87, 209, 201, 0.18), transparent 34%),
-    linear-gradient(180deg, rgba(7, 14, 24, 0.92) 0%, rgba(10, 20, 35, 0.88) 100%);
+    radial-gradient(circle at top left, rgb(var(--rgb-accent) / 0.18), transparent 34%),
+    linear-gradient(180deg, rgb(var(--rgb-hero-top) / 0.92) 0%, rgb(var(--rgb-hero-bottom) / 0.88) 100%);
 }
 
 .login-card {
-  background: rgba(9, 17, 31, 0.94);
+  background: rgb(var(--rgb-panel) / 0.94);
   box-shadow: var(--shadow);
   width: min(460px, 100%);
   justify-self: end;
@@ -2845,8 +2845,8 @@ a.invoice-row {
 .login-metric {
   padding: 18px;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(148, 184, 255, 0.08);
+  background: rgb(var(--rgb-overlay) / 0.04);
+  border: 1px solid rgb(var(--rgb-info) / 0.08);
 }
 
 .login-metric strong {
@@ -2882,7 +2882,7 @@ a.invoice-row {
   padding: 20px;
   overflow-y: auto;
   overscroll-behavior: contain;
-  background: rgba(4, 9, 16, 0.72);
+  background: rgb(var(--rgb-scrim) / 0.72);
   backdrop-filter: blur(6px);
 }
 
@@ -2893,7 +2893,7 @@ a.invoice-row {
   border-radius: 24px;
   padding: 22px;
   overflow-y: auto;
-  background: linear-gradient(180deg, rgba(11, 20, 34, 0.98) 0%, rgba(9, 17, 31, 0.96) 100%);
+  background: linear-gradient(180deg, rgb(var(--rgb-panel-top) / 0.98) 0%, rgb(var(--rgb-panel) / 0.96) 100%);
   box-shadow: var(--shadow);
 }
 
@@ -2942,7 +2942,7 @@ a.invoice-row {
   place-items: center;
   border: 1px solid var(--line-strong);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgb(var(--rgb-overlay) / 0.02);
   overflow: hidden;
 }
 
@@ -2950,7 +2950,7 @@ a.invoice-row {
   width: 100%;
   min-height: 72vh;
   border: none;
-  background: #111827;
+  background: var(--bg-pdf-frame);
 }
 
 .restore-progress-panel {
@@ -2972,8 +2972,8 @@ a.invoice-row {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.12);
-  border-top-color: var(--accent, #3b82f6);
+  border: 3px solid rgb(var(--rgb-overlay) / 0.12);
+  border-top-color: var(--accent);
   animation: restore-spin 0.8s linear infinite;
   margin-bottom: 20px;
 }
@@ -2982,8 +2982,8 @@ a.invoice-row {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(34, 197, 94, 0.18);
-  color: #22c55e;
+  background: rgb(var(--rgb-success) / 0.18);
+  color: rgb(var(--rgb-success));
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -3172,7 +3172,7 @@ a.invoice-row {
 }
 
 .skeleton {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 25%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.04) 75%);
+  background: linear-gradient(90deg, rgb(var(--rgb-overlay) / 0.04) 25%, rgb(var(--rgb-overlay) / 0.1) 50%, rgb(var(--rgb-overlay) / 0.04) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.4s infinite;
   border-radius: 8px;
@@ -3250,7 +3250,7 @@ a.invoice-row {
   padding: 4px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: rgba(7, 13, 24, 0.55);
+  background: rgb(var(--rgb-panel-field) / 0.55);
   flex-shrink: 0;
 }
 
@@ -3271,7 +3271,7 @@ a.invoice-row {
   height: 18px;
   padding: 0 5px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgb(var(--rgb-shadow) / 0.28);
   font-size: 0.72rem;
   font-weight: 800;
   line-height: 1;
@@ -3348,9 +3348,9 @@ a.invoice-row {
 }
 
 .invoice-feed-view__error {
-  border: 1px solid rgba(255, 139, 139, 0.3);
-  background: rgba(255, 139, 139, 0.12);
-  color: #ffc7c7;
+  border: 1px solid rgb(var(--rgb-danger) / 0.3);
+  background: rgb(var(--rgb-danger) / 0.12);
+  color: var(--text-on-danger-tint-2);
   border-radius: 14px;
   padding: 10px 14px;
 }
@@ -3408,7 +3408,7 @@ a.invoice-row {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgb(var(--rgb-overlay) / 0.02);
   text-align: center;
 }
 
@@ -3425,15 +3425,15 @@ a.invoice-row {
 }
 
 .invoice-feed-breakdown__value--purchase {
-  color: #fb923c;
+  color: var(--text-purchase);
 }
 
 .invoice-feed-breakdown__value--sales {
-  color: #84cc16;
+  color: var(--text-sales);
 }
 
 .invoice-feed-breakdown__value--cancelled {
-  color: #fca5a5;
+  color: var(--text-danger-soft);
 }
 
 .invoice-feed-breakdown__value--active {
@@ -3460,7 +3460,7 @@ a.invoice-row {
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
-  background: rgba(8, 17, 31, 0.95);
+  background: rgb(var(--rgb-bg) / 0.95);
 }
 
 .invoice-feed-table tbody td {
@@ -3475,7 +3475,7 @@ a.invoice-row {
 }
 
 .invoice-feed-table tbody tr:hover {
-  background: rgba(87, 209, 201, 0.08);
+  background: rgb(var(--rgb-accent) / 0.08);
 }
 
 .invoice-feed-table tbody tr.is-cancelled {
@@ -3508,15 +3508,15 @@ a.invoice-row {
 }
 
 .invoice-feed-table__status--active {
-  color: #bffbf6;
-  background: rgba(87, 209, 201, 0.14);
-  border: 1px solid rgba(87, 209, 201, 0.25);
+  color: var(--text-on-accent-tint);
+  background: rgb(var(--rgb-accent) / 0.14);
+  border: 1px solid rgb(var(--rgb-accent) / 0.25);
 }
 
 .invoice-feed-table__status--cancelled {
-  color: #ffc7c7;
-  background: rgba(255, 139, 139, 0.14);
-  border: 1px solid rgba(255, 139, 139, 0.25);
+  color: var(--text-on-danger-tint-2);
+  background: rgb(var(--rgb-danger) / 0.14);
+  border: 1px solid rgb(var(--rgb-danger) / 0.25);
 }
 
 /* Tax ledger — period totals ────────────────────────────────────────────
@@ -3534,14 +3534,14 @@ a.invoice-row {
   align-self: center;
   font-size: 1.25rem;
   font-weight: 800;
-  color: rgba(156, 173, 207, 0.5);
+  color: rgb(var(--rgb-muted) / 0.5);
 }
 
 .tax-bucket-group {
   display: grid;
   gap: 10px;
   padding-top: 16px;
-  border-top: 1px solid rgba(148, 184, 255, 0.1);
+  border-top: 1px solid rgb(var(--rgb-info) / 0.1);
 }
 
 .tax-bucket-grid {
@@ -3556,15 +3556,15 @@ a.invoice-row {
   gap: 6px;
   padding: 18px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(148, 184, 255, 0.08);
+  background: rgb(var(--rgb-overlay) / 0.03);
+  border: 1px solid rgb(var(--rgb-info) / 0.08);
 }
 
 /* The gross figure is the one that has to tie back to the books, so it is the
    only tile that carries the accent; the two it is built from stay quiet. */
 .tax-total--headline {
-  background: linear-gradient(140deg, rgba(87, 209, 201, 0.16), rgba(87, 209, 201, 0.03));
-  border-color: rgba(87, 209, 201, 0.28);
+  background: linear-gradient(140deg, rgb(var(--rgb-accent) / 0.16), rgb(var(--rgb-accent) / 0.03));
+  border-color: rgb(var(--rgb-accent) / 0.28);
 }
 
 .tax-total__label {
@@ -3582,7 +3582,7 @@ a.invoice-row {
   font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
-  color: rgba(156, 173, 207, 0.65);
+  color: rgb(var(--rgb-muted) / 0.65);
 }
 
 .tax-total__value {
@@ -3633,7 +3633,7 @@ a.invoice-row {
 
 .tax-total__split b {
   font-weight: 700;
-  color: rgba(230, 238, 251, 0.85);
+  color: rgb(var(--rgb-text) / 0.85);
 }
 
 /* The payable figure leads and the set-off working sits beside it, so the
@@ -3652,8 +3652,8 @@ a.invoice-row {
   gap: 10px;
   padding: 16px 18px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(148, 184, 255, 0.08);
+  background: rgb(var(--rgb-overlay) / 0.03);
+  border: 1px solid rgb(var(--rgb-info) / 0.08);
   /* Five money columns; on a narrow panel the table scrolls in place rather
      than widening the page. */
   overflow-x: auto;
@@ -3677,9 +3677,9 @@ a.invoice-row {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(156, 173, 207, 0.8);
+  color: rgb(var(--rgb-muted) / 0.8);
   text-align: left;
-  border-bottom: 1px solid rgba(148, 184, 255, 0.12);
+  border-bottom: 1px solid rgb(var(--rgb-info) / 0.12);
 }
 
 .tax-setoff__table tbody th,
@@ -3690,7 +3690,7 @@ a.invoice-row {
 
 .tax-setoff__table tfoot th,
 .tax-setoff__table tfoot td {
-  border-top: 1px solid rgba(148, 184, 255, 0.16);
+  border-top: 1px solid rgb(var(--rgb-info) / 0.16);
 }
 
 /* The column the row is read for. */
@@ -3710,7 +3710,7 @@ a.invoice-row {
 }
 
 .tax-setoff__note strong {
-  color: rgba(230, 238, 251, 0.9);
+  color: rgb(var(--rgb-text) / 0.9);
 }
 
 @media (max-width: 1100px) {
@@ -3764,7 +3764,7 @@ a.invoice-row {
   position: sticky;
   top: 0;
   z-index: 2;
-  background: var(--panel-bg, #0d1a2b);
+  background: var(--bg-sticky-head);
 }
 
 .tax-ledger-table tbody tr {
@@ -3772,17 +3772,17 @@ a.invoice-row {
 }
 
 .tax-ledger-table tbody tr:hover {
-  background: rgba(87, 209, 201, 0.04);
+  background: rgb(var(--rgb-accent) / 0.04);
 }
 
 .tax-ledger-table tbody tr.tax-ledger-row--sales {
-  box-shadow: inset 3px 0 0 rgba(34, 197, 94, 0.55);
-  background: linear-gradient(90deg, rgba(34, 197, 94, 0.08) 0%, rgba(34, 197, 94, 0.01) 22%, transparent 60%);
+  box-shadow: inset 3px 0 0 rgb(var(--rgb-success) / 0.55);
+  background: linear-gradient(90deg, rgb(var(--rgb-success) / 0.08) 0%, rgb(var(--rgb-success) / 0.01) 22%, transparent 60%);
 }
 
 .tax-ledger-table tbody tr.tax-ledger-row--purchase {
-  box-shadow: inset 3px 0 0 rgba(251, 146, 60, 0.55);
-  background: linear-gradient(90deg, rgba(251, 146, 60, 0.08) 0%, rgba(251, 146, 60, 0.01) 22%, transparent 60%);
+  box-shadow: inset 3px 0 0 rgb(var(--rgb-orange) / 0.55);
+  background: linear-gradient(90deg, rgb(var(--rgb-orange) / 0.08) 0%, rgb(var(--rgb-orange) / 0.01) 22%, transparent 60%);
 }
 
 .tax-ledger-type-cell {
@@ -3800,30 +3800,30 @@ a.invoice-row {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #c8d8ff;
-  border: 1px solid rgba(168, 185, 220, 0.28);
-  background: rgba(148, 184, 255, 0.12);
+  color: var(--text-on-info-tint-3);
+  border: 1px solid rgb(var(--rgb-tag-line) / 0.28);
+  background: rgb(var(--rgb-info) / 0.12);
 }
 
 .invoice-compact-card {
   border-radius: 20px;
-  border: 1px solid rgba(148, 184, 255, 0.12);
-  background: linear-gradient(135deg, rgba(10, 22, 40, 0.6) 0%, rgba(15, 29, 48, 0.45) 100%);
+  border: 1px solid rgb(var(--rgb-info) / 0.12);
+  background: linear-gradient(135deg, rgb(var(--rgb-panel-row) / 0.6) 0%, rgb(var(--rgb-card-strong) / 0.45) 100%);
   padding: 16px;
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
 .invoice-compact-card:hover {
   transform: translateY(-1px);
-  border-color: rgba(148, 184, 255, 0.24);
+  border-color: rgb(var(--rgb-info) / 0.24);
 }
 
 .invoice-compact-card--sales {
-  border-left: 4px solid rgba(34, 197, 94, 0.45);
+  border-left: 4px solid rgb(var(--rgb-success) / 0.45);
 }
 
 .invoice-compact-card--purchase {
-  border-left: 4px solid rgba(251, 146, 60, 0.45);
+  border-left: 4px solid rgb(var(--rgb-orange) / 0.45);
 }
 
 .invoice-compact-card--cancelled {
@@ -3875,9 +3875,9 @@ a.invoice-row {
   gap: 4px;
   padding: 2px 8px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 139, 139, 0.45);
-  color: #ffd9d9;
-  background: rgba(255, 139, 139, 0.22);
+  border: 1px solid rgb(var(--rgb-danger) / 0.45);
+  color: var(--text-on-danger-tint-3);
+  background: rgb(var(--rgb-danger) / 0.22);
   font-size: 0.74rem;
   font-weight: 800;
   white-space: nowrap;
@@ -3892,9 +3892,9 @@ a.invoice-row {
   display: inline-flex;
   padding: 4px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 139, 139, 0.3);
-  color: #ffc7c7;
-  background: rgba(255, 139, 139, 0.14);
+  border: 1px solid rgb(var(--rgb-danger) / 0.3);
+  color: var(--text-on-danger-tint-2);
+  background: rgb(var(--rgb-danger) / 0.14);
   font-size: 0.76rem;
   font-weight: 700;
 }
@@ -3944,11 +3944,11 @@ a.invoice-row {
 }
 
 .invoice-compact-card__amount--sales {
-  color: #84cc16;
+  color: var(--text-sales);
 }
 
 .invoice-compact-card__amount--purchase {
-  color: #fb923c;
+  color: var(--text-purchase);
 }
 
 .invoice-compact-card__actions {
@@ -4177,7 +4177,7 @@ a.invoice-row {
   /* Stacked, the figures form a column of their own; the extra weight is what
      tells that column apart from the labels facing it. */
   .summary-box__stat dd {
-    color: #e6edfa;
+    color: var(--text-summary-stat);
     font-weight: 600;
   }
 
@@ -4335,7 +4335,7 @@ a.invoice-row {
 }
 
 .chart__swatch--purchases {
-  background: #6f8bd8;
+  background: var(--chart-purchases);
 }
 
 .chart__swatch--receipts {
@@ -4363,7 +4363,7 @@ a.invoice-row {
 }
 
 .chart__bar--purchases {
-  fill: #6f8bd8;
+  fill: var(--chart-purchases);
 }
 
 .chart__line {
@@ -4787,7 +4787,7 @@ a.invoice-row {
   padding: 4px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: rgba(7, 13, 24, 0.55);
+  background: rgb(var(--rgb-panel-field) / 0.55);
   flex-wrap: wrap;
   max-width: 100%;
 }
@@ -4884,8 +4884,8 @@ a.invoice-row {
   margin-left: 8px;
   padding: 1px 8px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 139, 139, 0.4);
-  background: rgba(255, 139, 139, 0.12);
+  border: 1px solid rgb(var(--rgb-danger) / 0.4);
+  background: rgb(var(--rgb-danger) / 0.12);
   color: var(--danger);
   font-size: 0.7rem;
   font-weight: 600;
@@ -4963,7 +4963,7 @@ a.invoice-row {
 /* The row hover tint (accent at 8%) pre-mixed over --bg, since the pinned
    cell's own background would otherwise hide it. */
 .product-performance__table tbody tr:hover td:first-child {
-  background: #0e202d;
+  background: var(--bg-pinned-hover);
 }
 
 .product-performance__table thead th:first-child,
@@ -5124,7 +5124,7 @@ a.invoice-row {
   padding: 4px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: rgba(7, 13, 24, 0.55);
+  background: rgb(var(--rgb-panel-field) / 0.55);
   flex-shrink: 0;
 }
 
