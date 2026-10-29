@@ -101,6 +101,10 @@
      their text ghosts through. */
   --bg-modal-header: rgb(var(--rgb-panel-top));
 
+  /* The body colour that actually shows behind the app. It used to come from a
+     Tailwind bg-slate-950 class on <body>, which hid the html gradient below. */
+  --body-bg: #020617;
+
   /* The whole page background (html rule): a blue glow over a navy ramp. */
   --page-bg:
     radial-gradient(circle at top right, rgba(63, 133, 255, 0.14), transparent 26%),
@@ -241,7 +245,7 @@ body {
   min-height: 100vh;
   font-family: 'Manrope', sans-serif;
   color: var(--text);
-  background: transparent;
+  background: var(--body-bg);
 }
 
 #root {
