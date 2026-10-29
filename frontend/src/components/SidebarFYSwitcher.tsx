@@ -99,7 +99,7 @@ export default function SidebarFYSwitcher() {
                   background: 'var(--bg-card-strong)',
                   border: '1px solid var(--line-strong)',
                   borderRadius: '0.5rem',
-                  boxShadow: '0 4px 24px rgba(0,0,0,0.45)',
+                  boxShadow: '0 4px 24px rgb(var(--rgb-shadow) / 0.45)',
                   zIndex: 100,
                   overflow: 'hidden',
                   color: 'var(--text)',
@@ -246,7 +246,7 @@ export default function SidebarFYSwitcher() {
                     }
                     return null;
                   })()}
-                  {newFYError && <p style={{ color: 'var(--error, #ef4444)', fontSize: '0.85rem' }}>{newFYError}</p>}
+                  {newFYError && <p style={{ color: 'var(--error)', fontSize: '0.85rem' }}>{newFYError}</p>}
                   <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
                     <button type="button" className="button button--ghost" onClick={() => setNewFYModalOpen(false)}>
                       Cancel
