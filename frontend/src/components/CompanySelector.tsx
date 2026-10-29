@@ -123,7 +123,7 @@ export default function CompanySelector() {
           <span style={{ minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>
             {activeCompany?.name?.trim() || 'Select company'}
           </span>
-          <span style={{ fontSize: '0.75rem', opacity: 0.6 }}>▾</span>
+          <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>▾</span>
         </button>
         {companyDropdownOpen && (
           <div
@@ -146,7 +146,7 @@ export default function CompanySelector() {
               <p style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem', opacity: 0.7 }}>Loading companies...</p>
             )}
             {!companiesQuery.isLoading && companyList.length === 0 && (
-              <p style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem', opacity: 0.6 }}>No companies found</p>
+              <p style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem', opacity: 0.8 }}>No companies found</p>
             )}
             {companyList.map((company) => (
               <button

@@ -86,7 +86,7 @@ export default function SidebarFYSwitcher() {
               <span style={{ minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>
                 {activeFY ? activeFY.label : 'No active FY'}
               </span>
-              <span style={{ fontSize: '0.75rem', opacity: 0.6 }}>▾</span>
+              <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>▾</span>
             </button>
             {fyDropdownOpen && (
               <div
@@ -106,7 +106,7 @@ export default function SidebarFYSwitcher() {
                 }}
               >
                 {fyList.length === 0 && (
-                  <p style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem', opacity: 0.6 }}>No financial years</p>
+                  <p style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem', opacity: 0.8 }}>No financial years</p>
                 )}
                 {fyList.map((fy) => (
                   <button

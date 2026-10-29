@@ -22,28 +22,40 @@ export default function AppearancePage() {
         </div>
       </section>
 
-      <section className="section-card">
-        <fieldset style={{ border: 0, margin: 0, padding: 0 }}>
-          <legend className="eyebrow" style={{ padding: 0, marginBottom: '12px' }}>Theme</legend>
-          <div style={{ display: 'grid', gap: '12px' }}>
+      <section className="panel stack">
+        <fieldset className="appearance-fieldset">
+          <legend className="eyebrow">Theme</legend>
+          <div className="appearance-options">
             {OPTIONS.map((option) => {
               const id = `theme-${option.value}`;
+              const selected = preference === option.value;
               return (
-                <div key={option.value} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
-                  <input
-                    type="radio"
-                    id={id}
-                    name="theme"
-                    value={option.value}
-                    checked={preference === option.value}
-                    onChange={() => setPreference(option.value)}
-                    style={{ marginTop: '4px' }}
-                  />
-                  <label htmlFor={id} style={{ cursor: 'pointer' }}>
-                    <strong>{option.label}</strong>
-                    <span className="section-copy" style={{ display: 'block' }}>{option.hint}</span>
-                  </label>
-                </div>
+                <label
+                  key={option.value}
+                  htmlFor={id}
+                  className={`appearance-option${selected ? ' appearance-option--selected' : ''}`}
+                >
+                  {/* Swatches picture each theme, so they keep their own colours in either theme. */}
+                  <span className={`appearance-swatch appearance-swatch--${option.value}`} aria-hidden="true">
+                    <span className="appearance-swatch__bar" />
+                    <span className="appearance-swatch__line" />
+                    <span className="appearance-swatch__line appearance-swatch__line--short" />
+                  </span>
+                  <span className="appearance-option__row">
+                    <input
+                      type="radio"
+                      id={id}
+                      name="theme"
+                      value={option.value}
+                      checked={selected}
+                      onChange={() => setPreference(option.value)}
+                    />
+                    <span>
+                      <strong className="appearance-option__label">{option.label}</strong>
+                      <span className="appearance-option__hint">{option.hint}</span>
+                    </span>
+                  </span>
+                </label>
               );
             })}
           </div>
