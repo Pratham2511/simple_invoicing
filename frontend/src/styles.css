@@ -5174,7 +5174,7 @@ a.invoice-row {
   height: 18px;
   padding: 0 5px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgb(var(--rgb-shadow) / 0.28);
   font-size: 0.72rem;
   font-weight: 800;
   line-height: 1;
@@ -5336,8 +5336,8 @@ a.invoice-row {
   gap: 4px;
   padding: 1px 8px;
   border-radius: 999px;
-  border: 1px solid rgba(246, 214, 123, 0.4);
-  background: rgba(246, 214, 123, 0.12);
+  border: 1px solid rgb(var(--rgb-warning) / 0.4);
+  background: rgb(var(--rgb-warning) / 0.12);
   color: var(--warning);
   font-size: 0.68rem;
   font-weight: 700;
@@ -5351,7 +5351,7 @@ a.invoice-row {
 .promo-card {
   border-color: var(--line-strong);
   background:
-    linear-gradient(135deg, rgba(87, 209, 201, 0.09) 0%, rgba(87, 209, 201, 0) 55%),
+    linear-gradient(135deg, rgb(var(--rgb-accent) / 0.09) 0%, rgb(var(--rgb-accent) / 0) 55%),
     var(--bg-card-strong);
 }
 
@@ -5380,7 +5380,7 @@ a.invoice-row {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(156, 173, 207, 0.8);
+  color: rgb(var(--rgb-muted) / 0.8);
 }
 
 .marketplace-price-mode label {
@@ -5407,7 +5407,7 @@ a.invoice-row {
   padding: 10px 12px;
   border-radius: 12px;
   border: 1px solid var(--line-strong);
-  background: rgba(87, 209, 201, 0.08);
+  background: rgb(var(--rgb-accent) / 0.08);
   color: var(--text);
 }
 
@@ -5429,8 +5429,8 @@ a.invoice-row {
   align-items: flex-start;
   padding: 14px 16px;
   border-radius: 16px;
-  border: 1px solid rgba(246, 214, 123, 0.35);
-  background: rgba(246, 214, 123, 0.1);
+  border: 1px solid rgb(var(--rgb-warning) / 0.35);
+  background: rgb(var(--rgb-warning) / 0.1);
   color: var(--warning);
 }
 
@@ -5496,7 +5496,7 @@ a.invoice-row {
   padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: rgba(87, 209, 201, 0.06);
+  background: rgb(var(--rgb-accent) / 0.06);
 }
 
 .marketplace-meta h3 {
@@ -5582,7 +5582,7 @@ a.invoice-row {
 
 /* A failed auto-post is the one thing on this page a user must not scroll past. */
 .marketplace-row--failed td {
-  background: rgba(255, 139, 139, 0.08);
+  background: rgb(var(--rgb-danger) / 0.08);
 }
 
 .marketplace-linklike {
@@ -5619,7 +5619,7 @@ a.invoice-row {
 .status-chip--pending,
 .status-chip--paused,
 .status-chip--draft {
-  background: rgba(246, 214, 123, 0.12);
+  background: rgb(var(--rgb-warning) / 0.12);
   color: var(--warning);
 }
 
@@ -5628,12 +5628,12 @@ a.invoice-row {
 .status-chip--rejected,
 .status-chip--cancelled,
 .status-chip--expired {
-  background: rgba(255, 139, 139, 0.12);
+  background: rgb(var(--rgb-danger) / 0.12);
   color: var(--danger);
 }
 
 .status-chip--withdrawn {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgb(var(--rgb-overlay) / 0.06);
   color: var(--muted);
 }
 
@@ -5706,7 +5706,7 @@ a.invoice-row {
 .ledger-search__icon {
   position: absolute;
   left: 13px;
-  color: rgba(156, 173, 207, 0.75);
+  color: rgb(var(--rgb-muted) / 0.75);
   pointer-events: none;
 }
 
@@ -5732,14 +5732,14 @@ a.invoice-row {
   padding: 0;
   border: 0;
   border-radius: 999px;
-  background: rgba(148, 184, 255, 0.12);
+  background: rgb(var(--rgb-info) / 0.12);
   color: var(--muted);
   cursor: pointer;
   transition: background 160ms ease, color 160ms ease;
 }
 
 .ledger-search__clear:hover {
-  background: rgba(148, 184, 255, 0.22);
+  background: rgb(var(--rgb-info) / 0.22);
   color: var(--text);
 }
 
@@ -5772,8 +5772,8 @@ a.invoice-row {
   gap: 16px;
   padding: 18px 20px;
   border-radius: 22px;
-  border: 1px solid rgba(148, 184, 255, 0.12);
-  background: linear-gradient(135deg, rgba(10, 22, 40, 0.6) 0%, rgba(15, 29, 48, 0.4) 100%);
+  border: 1px solid rgb(var(--rgb-info) / 0.12);
+  background: linear-gradient(135deg, rgb(var(--rgb-panel-row) / 0.6) 0%, rgb(var(--rgb-card-strong) / 0.4) 100%);
   overflow: hidden;
   transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease, background 200ms ease;
 }
@@ -5786,7 +5786,7 @@ a.invoice-row {
   inset: 14px auto 14px 0;
   width: 3px;
   border-radius: 0 3px 3px 0;
-  background: linear-gradient(180deg, var(--accent) 0%, rgba(126, 141, 255, 0.9) 100%);
+  background: linear-gradient(180deg, var(--accent) 0%, rgb(var(--rgb-accent-violet) / 0.9) 100%);
   opacity: 0;
   transform: scaleY(0.35);
   transition: opacity 200ms ease, transform 200ms ease;
@@ -5794,9 +5794,9 @@ a.invoice-row {
 
 .ledger-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(148, 184, 255, 0.26);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
-  background: linear-gradient(135deg, rgba(87, 209, 201, 0.07) 0%, rgba(79, 125, 255, 0.07) 100%);
+  border-color: rgb(var(--rgb-info) / 0.26);
+  box-shadow: 0 14px 34px rgb(var(--rgb-shadow) / 0.28);
+  background: linear-gradient(135deg, rgb(var(--rgb-accent) / 0.07) 0%, rgb(var(--rgb-accent-2) / 0.07) 100%);
 }
 
 .ledger-card:hover::before,
@@ -5809,7 +5809,7 @@ a.invoice-row {
    the same colour wherever it appears and the eye can find it again without
    reading. */
 .ledger-card__avatar {
-  --tone: 148, 184, 255;
+  --tone: var(--rgb-avatar-default);
   display: grid;
   place-items: center;
   width: 46px;
@@ -5819,17 +5819,17 @@ a.invoice-row {
   font-size: 1rem;
   font-weight: 700;
   color: rgb(var(--tone));
-  background: linear-gradient(150deg, rgba(var(--tone), 0.26) 0%, rgba(var(--tone), 0.07) 100%);
-  border: 1px solid rgba(var(--tone), 0.3);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  background: linear-gradient(150deg, rgb(var(--tone) / 0.26) 0%, rgb(var(--tone) / 0.07) 100%);
+  border: 1px solid rgb(var(--tone) / 0.3);
+  box-shadow: inset 0 1px 0 rgb(var(--rgb-overlay) / 0.06);
 }
 
-.ledger-card__avatar--1 { --tone: 87, 209, 201; }
-.ledger-card__avatar--2 { --tone: 141, 171, 255; }
-.ledger-card__avatar--3 { --tone: 183, 155, 255; }
-.ledger-card__avatar--4 { --tone: 246, 214, 123; }
-.ledger-card__avatar--5 { --tone: 255, 152, 164; }
-.ledger-card__avatar--6 { --tone: 126, 231, 166; }
+.ledger-card__avatar--1 { --tone: var(--rgb-avatar-1); }
+.ledger-card__avatar--2 { --tone: var(--rgb-avatar-2); }
+.ledger-card__avatar--3 { --tone: var(--rgb-avatar-3); }
+.ledger-card__avatar--4 { --tone: var(--rgb-avatar-4); }
+.ledger-card__avatar--5 { --tone: var(--rgb-avatar-5); }
+.ledger-card__avatar--6 { --tone: var(--rgb-avatar-6); }
 
 .ledger-card__body {
   gap: 10px;
@@ -5865,7 +5865,7 @@ a.invoice-row {
 }
 
 .ledger-card__name:focus-visible {
-  outline: 2px solid rgba(87, 209, 201, 0.6);
+  outline: 2px solid rgb(var(--rgb-accent) / 0.6);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -5882,9 +5882,9 @@ a.invoice-row {
   gap: 6px;
   padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(148, 184, 255, 0.07);
-  border: 1px solid rgba(148, 184, 255, 0.14);
-  color: #c7d7f4;
+  background: rgb(var(--rgb-info) / 0.07);
+  border: 1px solid rgb(var(--rgb-info) / 0.14);
+  color: var(--text-soft);
   font-size: 0.76rem;
   font-weight: 600;
   overflow-wrap: anywhere;
@@ -5892,13 +5892,13 @@ a.invoice-row {
 
 .ledger-chip > svg {
   flex-shrink: 0;
-  color: rgba(156, 173, 207, 0.7);
+  color: rgb(var(--rgb-muted) / 0.7);
 }
 
 .ledger-chip--gst {
-  background: rgba(87, 209, 201, 0.1);
-  border-color: rgba(87, 209, 201, 0.26);
-  color: #a8f0e8;
+  background: rgb(var(--rgb-accent) / 0.1);
+  border-color: rgb(var(--rgb-accent) / 0.26);
+  color: var(--text-on-accent-tint-4);
   font-weight: 700;
   letter-spacing: 0.04em;
   font-variant-numeric: tabular-nums;
@@ -5909,9 +5909,9 @@ a.invoice-row {
 }
 
 .ledger-chip--whatsapp {
-  background: rgba(87, 209, 201, 0.1);
-  border-color: rgba(87, 209, 201, 0.26);
-  color: #a8f0e8;
+  background: rgb(var(--rgb-accent) / 0.1);
+  border-color: rgb(var(--rgb-accent) / 0.26);
+  color: var(--text-on-accent-tint-4);
 }
 
 .ledger-chip--whatsapp > svg {
@@ -5919,13 +5919,13 @@ a.invoice-row {
 }
 
 a.ledger-chip:hover {
-  border-color: rgba(148, 184, 255, 0.4);
-  background: rgba(148, 184, 255, 0.14);
+  border-color: rgb(var(--rgb-info) / 0.4);
+  background: rgb(var(--rgb-info) / 0.14);
 }
 
 a.ledger-chip--whatsapp:hover {
-  border-color: rgba(87, 209, 201, 0.5);
-  background: rgba(87, 209, 201, 0.18);
+  border-color: rgb(var(--rgb-accent) / 0.5);
+  background: rgb(var(--rgb-accent) / 0.18);
 }
 
 a.ledger-chip:focus-visible {
@@ -5962,14 +5962,14 @@ a.ledger-chip:focus-visible {
   gap: 10px;
   padding: 10px 12px;
   border-radius: 14px;
-  background: rgba(8, 16, 29, 0.56);
-  border: 1px solid rgba(148, 184, 255, 0.12);
+  background: rgb(var(--rgb-panel-well) / 0.56);
+  border: 1px solid rgb(var(--rgb-info) / 0.12);
 }
 
 .ledger-card__bank > svg {
   flex-shrink: 0;
   margin-top: 2px;
-  color: rgba(148, 184, 255, 0.55);
+  color: rgb(var(--rgb-info) / 0.55);
 }
 
 .ledger-card__bank-facts {
@@ -5991,14 +5991,14 @@ a.ledger-chip:focus-visible {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(156, 173, 207, 0.6);
+  color: rgb(var(--rgb-muted) / 0.6);
 }
 
 .ledger-card__bank-facts dd {
   margin: 0;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #dce7fb;
+  color: var(--text-bank-facts);
   font-variant-numeric: tabular-nums;
   overflow-wrap: anywhere;
 }
@@ -6022,7 +6022,7 @@ a.ledger-chip:focus-visible {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(156, 173, 207, 0.6);
+  color: rgb(var(--rgb-muted) / 0.6);
 }
 
 .ledger-card__balance-value {
@@ -6046,19 +6046,19 @@ a.ledger-chip:focus-visible {
 /* Debit balances are owed to us, credit balances are owed by us — the two
    read as opposites, so they get opposite tints. */
 .ledger-card__balance--debit .ledger-card__balance-value {
-  color: #7ee2b8;
+  color: var(--text-balance-debit);
 }
 
 .ledger-card__balance--credit .ledger-card__balance-value {
-  color: #ffab8f;
+  color: var(--text-balance-credit);
 }
 
 .ledger-card__id {
   padding: 3px 9px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(148, 184, 255, 0.1);
-  color: rgba(156, 173, 207, 0.6);
+  background: rgb(var(--rgb-overlay) / 0.03);
+  border: 1px solid rgb(var(--rgb-info) / 0.1);
+  color: rgb(var(--rgb-muted) / 0.6);
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -6092,8 +6092,8 @@ a.ledger-chip:focus-visible {
   gap: 16px;
   padding: 18px 20px;
   border-radius: 22px;
-  border: 1px solid rgba(148, 184, 255, 0.1);
-  background: rgba(10, 22, 40, 0.45);
+  border: 1px solid rgb(var(--rgb-info) / 0.1);
+  background: rgb(var(--rgb-panel-row) / 0.45);
 }
 
 .ledger-skeleton__lines {
@@ -6127,9 +6127,9 @@ a.ledger-chip:focus-visible {
 .ledger-skeleton__line {
   background: linear-gradient(
     90deg,
-    rgba(148, 184, 255, 0.06) 0%,
-    rgba(148, 184, 255, 0.16) 50%,
-    rgba(148, 184, 255, 0.06) 100%
+    rgb(var(--rgb-info) / 0.06) 0%,
+    rgb(var(--rgb-info) / 0.16) 50%,
+    rgb(var(--rgb-info) / 0.06) 100%
   );
   background-size: 220% 100%;
   animation: ledger-shimmer 1.5s ease-in-out infinite;
@@ -6148,7 +6148,7 @@ a.ledger-chip:focus-visible {
   justify-content: center;
   gap: 14px;
   padding-top: 16px;
-  border-top: 1px solid rgba(148, 184, 255, 0.1);
+  border-top: 1px solid rgb(var(--rgb-info) / 0.1);
 }
 
 .ledger-pagination__status {
@@ -6317,7 +6317,7 @@ a.ledger-chip:focus-visible {
 .settings-nav__back:hover,
 .settings-nav__back--active {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgb(var(--rgb-overlay) / 0.04);
 }
 
 .settings-nav__group {
@@ -6357,7 +6357,7 @@ a.ledger-chip:focus-visible {
 
 .settings-nav__link:hover {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgb(var(--rgb-overlay) / 0.04);
 }
 
 .settings-nav__link--active {
@@ -6523,8 +6523,8 @@ a.ledger-chip:focus-visible {
   gap: 10px;
   padding: 14px 16px;
   border-radius: 18px;
-  border: 1px solid rgba(87, 209, 201, 0.28);
-  background: linear-gradient(135deg, rgba(87, 209, 201, 0.08) 0%, rgba(148, 184, 255, 0.05) 100%);
+  border: 1px solid rgb(var(--rgb-accent) / 0.28);
+  background: linear-gradient(135deg, rgb(var(--rgb-accent) / 0.08) 0%, rgb(var(--rgb-info) / 0.05) 100%);
 }
 
 .scan-bar__row {
@@ -6588,8 +6588,8 @@ a.ledger-chip:focus-visible {
 .scan-bar__pill {
   padding: 4px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(87, 209, 201, 0.4);
-  background: rgba(87, 209, 201, 0.14);
+  border: 1px solid rgb(var(--rgb-accent) / 0.4);
+  background: rgb(var(--rgb-accent) / 0.14);
   color: var(--accent);
   font-size: 0.72rem;
   font-weight: 800;
@@ -6599,8 +6599,8 @@ a.ledger-chip:focus-visible {
 }
 
 .scan-bar__pill--queue {
-  border-color: rgba(246, 214, 123, 0.4);
-  background: rgba(246, 214, 123, 0.14);
+  border-color: rgb(var(--rgb-warning) / 0.4);
+  background: rgb(var(--rgb-warning) / 0.14);
   color: var(--warning);
 }
 
@@ -6613,13 +6613,13 @@ a.ledger-chip:focus-visible {
   padding: 0;
   border-radius: 10px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgb(var(--rgb-overlay) / 0.04);
   color: var(--muted);
   cursor: pointer;
 }
 
 .scan-bar__toggle[aria-pressed='true'] {
-  border-color: rgba(87, 209, 201, 0.4);
+  border-color: rgb(var(--rgb-accent) / 0.4);
   color: var(--accent);
 }
 
@@ -6690,7 +6690,7 @@ a.ledger-chip:focus-visible {
   padding: 4px 8px;
   border-radius: 10px;
   font-size: 0.8rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgb(var(--rgb-overlay) / 0.03);
 }
 
 .scan-feedback__item--ok {
@@ -6741,8 +6741,8 @@ a.ledger-chip:focus-visible {
 }
 
 @keyframes line-flash {
-  0% { background: rgba(87, 209, 201, 0.28); border-color: rgba(87, 209, 201, 0.55); }
-  100% { background: rgba(255, 255, 255, 0.03); border-color: rgba(148, 184, 255, 0.08); }
+  0% { background: rgb(var(--rgb-accent) / 0.28); border-color: rgb(var(--rgb-accent) / 0.55); }
+  100% { background: rgb(var(--rgb-overlay) / 0.03); border-color: rgb(var(--rgb-info) / 0.08); }
 }
 
 .field__lock {
@@ -6774,8 +6774,8 @@ a.ledger-chip:focus-visible {
   gap: 8px;
   padding: 12px;
   border-radius: 14px;
-  border: 1px dashed rgba(148, 184, 255, 0.22);
-  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgb(var(--rgb-info) / 0.22);
+  background: rgb(var(--rgb-overlay) / 0.02);
 }
 
 .serial-chips__count {
@@ -6801,8 +6801,8 @@ a.ledger-chip:focus-visible {
   gap: 6px;
   padding: 4px 6px 4px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(87, 209, 201, 0.32);
-  background: rgba(87, 209, 201, 0.1);
+  border: 1px solid rgb(var(--rgb-accent) / 0.32);
+  background: rgb(var(--rgb-accent) / 0.1);
   font-family: 'Space Grotesk', ui-monospace, monospace;
   font-size: 0.78rem;
 }
@@ -6820,7 +6820,7 @@ a.ledger-chip:focus-visible {
   padding: 0;
   border: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgb(var(--rgb-overlay) / 0.08);
   color: var(--text);
   cursor: pointer;
 }
@@ -6902,12 +6902,12 @@ a.ledger-chip:focus-visible {
 }
 
 .serial-picker__row.is-active {
-  border-color: rgba(87, 209, 201, 0.45);
-  background: rgba(87, 209, 201, 0.1);
+  border-color: rgb(var(--rgb-accent) / 0.45);
+  background: rgb(var(--rgb-accent) / 0.1);
 }
 
 .serial-picker__row.is-picked {
-  background: rgba(87, 209, 201, 0.16);
+  background: rgb(var(--rgb-accent) / 0.16);
 }
 
 .serial-picker__check {
@@ -6994,7 +6994,7 @@ a.ledger-chip:focus-visible {
   padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.02);
+  background: rgb(var(--rgb-overlay) / 0.02);
 }
 
 .serial-drawer__toolbar {
@@ -7022,7 +7022,7 @@ a.ledger-chip:focus-visible {
   gap: 10px;
   padding: 6px 8px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgb(var(--rgb-overlay) / 0.03);
   font-size: 0.8rem;
 }
 
@@ -7083,7 +7083,7 @@ a.ledger-chip:focus-visible {
   }
 
   .line-item[data-flash='on'] {
-    border-color: rgba(87, 209, 201, 0.55);
+    border-color: rgb(var(--rgb-accent) / 0.55);
   }
 }
 
@@ -7113,7 +7113,7 @@ a.ledger-chip:focus-visible {
   padding: clamp(22px, 4vw, 34px);
   border-radius: 28px;
   border: 1px solid var(--line);
-  background: rgba(9, 17, 31, 0.94);
+  background: rgb(var(--rgb-panel) / 0.94);
   box-shadow: var(--shadow);
 }
 
@@ -7125,7 +7125,7 @@ a.ledger-chip:focus-visible {
   padding: 14px 16px;
   border-radius: 18px;
   border: 1px solid var(--line-strong);
-  background: rgba(87, 209, 201, 0.07);
+  background: rgb(var(--rgb-accent) / 0.07);
 }
 
 .oauth-consent__host > svg {
@@ -7187,11 +7187,11 @@ a.ledger-chip:focus-visible {
 
 @keyframes deep-link-flash {
   0%, 45% {
-    box-shadow: 0 0 0 2px rgba(87, 209, 201, 0.65);
-    background-color: rgba(87, 209, 201, 0.09);
+    box-shadow: 0 0 0 2px rgb(var(--rgb-accent) / 0.65);
+    background-color: rgb(var(--rgb-accent) / 0.09);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(87, 209, 201, 0);
+    box-shadow: 0 0 0 2px rgb(var(--rgb-accent) / 0);
     background-color: transparent;
   }
 }
@@ -7199,7 +7199,7 @@ a.ledger-chip:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .deep-link-target {
     animation: none;
-    box-shadow: 0 0 0 2px rgba(87, 209, 201, 0.55);
+    box-shadow: 0 0 0 2px rgb(var(--rgb-accent) / 0.55);
   }
 }
 
@@ -7219,7 +7219,7 @@ a.ledger-chip:focus-visible {
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgb(var(--rgb-overlay) / 0.03);
 }
 
 /* Takes the slack so the quantity pill keeps its size on a narrow panel. */
@@ -7449,7 +7449,7 @@ a.ledger-chip:focus-visible {
 .catalogue-search__icon {
   position: absolute;
   left: 15px;
-  color: rgba(156, 173, 207, 0.75);
+  color: rgb(var(--rgb-muted) / 0.75);
   pointer-events: none;
 }
 
@@ -7512,7 +7512,7 @@ a.ledger-chip:focus-visible {
 /* An applied filter has to read as *applied* without opening it, since it is
    the reason rows are missing from the list below. */
 .catalogue-filter__select--on {
-  border-color: rgba(87, 209, 201, 0.55);
+  border-color: rgb(var(--rgb-accent) / 0.55);
   color: var(--accent);
 }
 
@@ -7549,7 +7549,7 @@ a.ledger-chip:focus-visible {
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: 20px;
-  background: rgba(8, 16, 29, 0.5);
+  background: rgb(var(--rgb-panel-well) / 0.5);
 }
 
 /* `separate`, not `collapse`: a collapsed table drops the borders of sticky
@@ -7629,11 +7629,11 @@ a.ledger-chip:focus-visible {
 }
 
 .catalogue-row:hover td {
-  background: rgba(148, 184, 255, 0.05);
+  background: rgb(var(--rgb-info) / 0.05);
 }
 
 .catalogue-row:hover td:first-child {
-  background: #10203a;
+  background: var(--bg-pinned-hover-info);
 }
 
 /* An inactive product used to be indistinguishable from an active one — the
@@ -7643,11 +7643,11 @@ a.ledger-chip:focus-visible {
 }
 
 .catalogue-row--editing td {
-  background: rgba(87, 209, 201, 0.06);
+  background: rgb(var(--rgb-accent) / 0.06);
 }
 
 .catalogue-row--editing td:first-child {
-  background: #0e2733;
+  background: var(--bg-pinned-editing);
 }
 
 .catalogue-row__actions {
@@ -7747,7 +7747,7 @@ a.ledger-chip:focus-visible {
 
 .catalogue-stock:hover {
   border-color: var(--line-strong);
-  background: rgba(148, 184, 255, 0.12);
+  background: rgb(var(--rgb-info) / 0.12);
 }
 
 .catalogue-stock__value {
@@ -7760,8 +7760,8 @@ a.ledger-chip:focus-visible {
 }
 
 .catalogue-stock--low {
-  border-color: rgba(246, 214, 123, 0.45);
-  background: rgba(246, 214, 123, 0.12);
+  border-color: rgb(var(--rgb-warning) / 0.45);
+  background: rgb(var(--rgb-warning) / 0.12);
 }
 
 .catalogue-stock--low .catalogue-stock__value {
@@ -7774,7 +7774,7 @@ a.ledger-chip:focus-visible {
   padding: 1px 7px;
   border-radius: 999px;
   background: var(--warning);
-  color: #2c2103;
+  color: var(--on-warning);
   font-size: 0.65rem;
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -7808,7 +7808,7 @@ a.ledger-chip:focus-visible {
 .form-error {
   margin: 0;
   padding: 10px 14px;
-  border: 1px solid rgba(255, 139, 139, 0.35);
+  border: 1px solid rgb(var(--rgb-danger) / 0.35);
   border-radius: 14px;
   background: var(--color-error-bg);
   color: var(--danger);
@@ -7987,7 +7987,7 @@ a.ledger-chip:focus-visible {
   display: grid;
   gap: 10px;
   padding: 14px;
-  border: 1px solid rgba(255, 139, 139, 0.32);
+  border: 1px solid rgb(var(--rgb-danger) / 0.32);
   border-radius: 18px;
   background: var(--color-error-bg);
 }
@@ -8054,11 +8054,11 @@ a.ledger-chip:focus-visible {
 }
 
 .invoice-number-copy__button:hover {
-  background: var(--surface-hover, rgba(255, 255, 255, 0.08));
+  background: rgb(var(--rgb-overlay) / 0.08);
 }
 
 .invoice-number-copy__button:focus-visible {
-  outline: 2px solid var(--primary, #5585e8);
+  outline: 2px solid var(--outline-info);
   outline-offset: 2px;
 }
 
@@ -8142,7 +8142,7 @@ a.ledger-chip:focus-visible {
 }
 
 .copies-stepper__step:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.09);
+  background: rgb(var(--rgb-overlay) / 0.09);
 }
 
 .copies-stepper__step:disabled {
